@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.12</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.portfolio</groupId>
+	<artifactId>backend-portfolio-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>backend-portfolio-api</name>
+	<description>Backend Portfolio API for Job Hunting</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+		<xmlunit.version>2.10.1</xmlunit.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Web Starter: RESTful APIを作成するために必要 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Data JPA Starter: データベースアクセスを簡単にする -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- MySQL Connector/J: MySQLデータベースとJavaアプリケーションを接続する (修正済み) -->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Flyway Core: データベースマイグレーション（スキーマのバージョン管理） -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+
+		<!-- Flyway MySQL: FlywayがMySQLで動作するために必要 -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-mysql</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- Spring Boot Test Starter: テストコードを書くために必要 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<!-- xmlunit-coreの除外は、もし特定の理由がなければ不要な場合もあります -->
+			<!-- 必要であれば残し、不要であれば exclusion ブロックごと削除してください -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.xmlunit</groupId>
+					<artifactId>xmlunit-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- xmlunit-core をテストスコープで直接指定している場合は、上記 starter-test からの除外と合わせて整合性を確認 -->
+		<dependency>
+			<groupId>org.xmlunit</groupId>
+			<artifactId>xmlunit-core</artifactId>
+			<version>${xmlunit.version}</version> <!-- xmlunit.version プロパティでバージョン指定 -->
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.springframework.boot</groupId>
+							<artifactId>spring-boot-devtools</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

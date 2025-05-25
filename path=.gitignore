@@ -1,0 +1,26 @@
+### Memory Bank ###
+memory-bank
+
+### General Exclusions ###
+# Log files
+*.log
+# JVM crash logs
+hs_err_pid*
+
+# Maven temporary files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+
+# OS generated files #
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini 

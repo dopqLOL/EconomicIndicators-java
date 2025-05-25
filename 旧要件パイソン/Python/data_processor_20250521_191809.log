@@ -1,0 +1,13 @@
+2025-05-21 19:18:09,208 - __main__ - INFO - DataProcessor initialized. Output directory: ..\csv\Statistics
+2025-05-21 19:18:09,209 - __main__ - INFO - Starting full data processing...
+2025-05-21 19:18:09,209 - __main__ - INFO - Loading ZigZag data...
+2025-05-21 19:18:09,209 - __main__ - WARNING - DEBUG_MODE is True. Loading only the first ZigZag file and a limited date range.
+2025-05-21 19:18:09,296 - __main__ - INFO - Loaded 40309 records from mt5_zigzag_legs_20230501_20250431.csv
+2025-05-21 19:18:09,314 - __main__ - INFO - DEBUG_MODE: Filtered ZigZag data to 189 records for recent period.
+2025-05-21 19:18:09,314 - __main__ - INFO - Combined ZigZag data: 189 records
+2025-05-21 19:18:09,316 - __main__ - INFO - Loading economic indicator data...
+2025-05-21 19:18:09,374 - __main__ - WARNING - Failed to load with encoding: utf-8
+2025-05-21 19:18:09,507 - __main__ - INFO - Successfully loaded indicators with encoding: cp932
+2025-05-21 19:18:09,546 - __main__ - INFO - Loaded 89019 indicator records
+2025-05-21 19:18:09,546 - __main__ - ERROR - ZigZag data is not loaded properly or missing required columns (start_time_jst, price).
+2025-05-21 19:18:09,547 - __main__ - ERROR - Failed to calculate daily fixed window volatility or no data produced.

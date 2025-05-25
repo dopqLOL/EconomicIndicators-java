@@ -1,0 +1,20 @@
+2025-05-21 22:14:09,482 - __main__ - INFO - DataProcessor initialized. Output directory: ..\csv\Statistics
+2025-05-21 22:14:09,482 - __main__ - INFO - Starting full data processing...
+2025-05-21 22:14:09,482 - __main__ - INFO - Loading ZigZag data...
+2025-05-21 22:14:09,483 - __main__ - WARNING - DEBUG_MODE is True. Loading only the first ZigZag file and a limited date range.
+2025-05-21 22:14:09,569 - __main__ - INFO - Loaded 40309 records from mt5_zigzag_legs_20230501_20250431.csv
+2025-05-21 22:14:09,588 - __main__ - INFO - DEBUG_MODE: Filtered ZigZag data to 20175 records for recent period (approx. 1 year).
+2025-05-21 22:14:09,593 - __main__ - INFO - Combined ZigZag data: 20175 records
+2025-05-21 22:14:09,594 - __main__ - INFO - Loading economic indicator data...
+2025-05-21 22:14:09,653 - __main__ - WARNING - Failed to load with encoding: utf-8
+2025-05-21 22:14:09,781 - __main__ - INFO - Successfully loaded indicators with encoding: cp932
+2025-05-21 22:14:09,820 - __main__ - INFO - Loaded 89019 indicator records
+2025-05-21 22:14:09,820 - __main__ - INFO - Calculating daily fixed window volatility...
+2025-05-21 22:14:14,345 - __main__ - INFO - Calculated daily fixed window volatility for 313 days.
+2025-05-21 22:14:14,346 - __main__ - INFO - Merging daily volatility with indicators...
+2025-05-21 22:14:14,373 - __main__ - INFO - Merged volatility data for 89019 indicator events.
+2025-05-21 22:14:14,374 - __main__ - INFO - Calculating indicator statistics for fixed time windows...
+2025-05-21 22:14:23,992 - __main__ - INFO - Calculated statistics for 9583 indicator-time_window combinations.
+2025-05-21 22:14:24,930 - __main__ - INFO - Saved merged volatility data to ..\csv\Statistics\indicator_volatility_with_fixed_windows_20250521_221423.csv
+2025-05-21 22:14:24,996 - __main__ - INFO - Saved statistics data to ..\csv\Statistics\indicator_statistics_for_fixed_windows_20250521_221423.csv
+2025-05-21 22:14:24,996 - __main__ - INFO - Data processing completed successfully
