@@ -79,6 +79,7 @@
 ## 🎯 短期実装計画 (5月26日 - 5月31日)
 
 ### Day 1: 2025年5月26日（月）- DB設計、エンティティ、Docker初期設定
+- **推奨ブランチ**: `feature/day1-db-entity-docker`
 - [ ] **DB設計最終確認** (旧Day 1)
 - [ ] **EconomicIndicator, VolatilityDataエンティティ実装** (旧Day 2)
 - [ ] **User, UserSettingエンティティ実装** (旧Day 2)
@@ -87,12 +88,14 @@
 - [ ] **Spring BootアプリのDockerfile作成 (初期)**
 
 ### Day 2: 2025年5月27日（火）- リポジトリ層、サービス層(基本)、Dockerイメージビルド
+- **推奨ブランチ**: `feature/day2-repo-service-docker`
 - [ ] **各エンティティのリポジトリインターフェース実装** (旧Day 3)
 - [ ] **テスト用H2データベース設定** (旧Day 2) および **テスト用データセット作成とインポートスクリプト実装** (旧Day 3)
 - [ ] **EconomicIndicatorService実装 (CRUD、基本検索)** (旧Day 4)
 - [ ] **Dockerイメージビルドとローカルコンテナ実行確認**
 
 ### Day 3: 2025年5月28日（水）- サービス層(応用)、CI/CD初期設定
+- **推奨ブランチ**: `feature/day3-service-cicd`
 - [ ] **VolatilityDataService実装 (CRUD、指標ID検索)** (旧Day 4)
 - [ ] **UserService, UserSettingService実装 (基本機能)** (旧Day 5)
 - [ ] **StatisticsService基本実装 (平均値・中央値、3分類ロジック基本)** (旧Day 5)
@@ -100,18 +103,21 @@
 - [ ] **簡単なビルドとテストを実行するGitHub Actionsワークフロー作成 (初期)**
 
 ### Day 4: 2025年5月29日（木）- コントローラー層、DTO設計、Docker Compose
+- **推奨ブランチ**: `feature/day4-controller-dto-compose`
 - [ ] **APIリクエスト/レスポンスDTOクラス設計** (旧Day 6)
 - [ ] **EconomicIndicatorController実装 (CRUD、検索、基本例外処理)** (旧Day 6)
 - [ ] **VolatilityDataController実装 (CRUD、指標ID検索)** (旧Day 7)
 - [ ] **Docker Compose導入:** アプリケーションとMySQLデータベースを連携させる `docker-compose.yml` 作成
 
 ### Day 5: 2025年5月30日（金）- CSVインポート、統計計算(3分類)、CI/CD改善
+- **推奨ブランチ**: `feature/day5-csv-stats-cicd`
 - [ ] **CSVファイル読み込み機構実装 (Apache Commons CSV)** (旧Day 8)
 - [ ] **インポートAPIエンドポイント実装 (ファイルアップロード、データ検証)** (旧Day 8)
 - [ ] **3分類アルゴリズム詳細実装 (パーセンタイルベース)** (旧Day 9)
 - [ ] **GitHub Actionsワークフロー改善:** Dockerイメージビルドとプッシュ (例: Docker Hub, GitHub Container Registry) を追加
 
 ### Day 6: 2025年5月31日（土）- 統計計算(応用)、テスト、最適化、ドキュメント
+- **推奨ブランチ**: `feature/day6-stats-test-optimize`
 - [ ] **時間帯ボラティリティ計算実装** (旧Day 9)
 - [ ] **地合い判断ロジック実装** (旧Day 9)
 - [ ] **単体テスト・統合テスト強化、API統合テスト(Postman)** (旧Day 7, Day 10)
