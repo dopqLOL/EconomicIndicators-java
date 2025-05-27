@@ -1,0 +1,35 @@
+package com.portfolio.backend_portfolio_api.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Column;
+import java.time.LocalDate;
+import java.math.BigDecimal;
+
+
+@Entity
+@Table(name = "economic_indicator")
+public class EconomicIndicator {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "date", nullable = false)
+    private LocalDate date;
+
+    @Column(name = "country", nullable = false)
+    private String county;
+
+    @Column(name = "indicator", nullable = false)
+    private String indicator;
+
+    @Column(name = "actual", nullable = false)
+    private Double actual;
+    
+
+
+}
