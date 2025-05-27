@@ -15,7 +15,7 @@
 ## エンティティ設計概要
 
 ### 1. EconomicIndicator（経済指標）
-- **ドメインモデル**: `com.portfolio.backend_portfolio_api.domain.model.EconomicIndicator`
+- **ドメインモデル**: `com.portfolio.backend_portfolio_api.entity.EconomicIndicator`
 - **JPA エンティティ**: `com.portfolio.backend_portfolio_api.infrastructure.persistence.EconomicIndicatorJpaEntity`
 - **属性**:
   - `id`: Long (主キー)

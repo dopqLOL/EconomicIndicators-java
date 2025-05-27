@@ -26,11 +26,11 @@
   - [ ] データベース接続設定
   - [ ] JPA設定
   - [ ] Hibernate設定
-- [ ] Domain層の実装
-  - [ ] EconomicIndicator ドメインモデル
-  - [ ] VolatilityData ドメインモデル
-  - [ ] User ドメインモデル
-  - [ ] UserSetting ドメインモデル
+- [x] Domain層の実装
+  - [x] EconomicIndicator ドメインモデル
+  - [x] VolatilityData ドメインモデル
+  - [x] User ドメインモデル
+  - [x] UserSetting ドメインモデル
 - [ ] Infrastructure層の実装
   - [ ] EconomicIndicatorJpaEntity
   - [ ] VolatilityDataJpaEntity
@@ -40,6 +40,7 @@
   - [ ] V1.0.0__create_initial_schema.sql
 - [ ] テスト用の設定ファイル (application-test.properties)
 - [ ] 日次振り返りの実施
+- [x] **エンティティ間のリレーション設定** (旧Day 2)
 
 ### 進捗状況
 - **全体進捗**: 10% (計画通り)
@@ -80,12 +81,12 @@
 
 ### Day 1: 2025年5月26日（月）- DB設計、エンティティ、Docker初期設定
 - **推奨ブランチ**: `feature/day1-db-entity-docker`
-- [ ] **DB設計最終確認** (旧Day 1)
-- [ ] **EconomicIndicator, VolatilityDataエンティティ実装** (旧Day 2)
-- [ ] **User, UserSettingエンティティ実装** (旧Day 2)
-- [ ] **エンティティ間のリレーション設定** (旧Day 2)
-- [ ] **Docker環境構築準備:** Docker Desktopインストール確認、基本的なDockerコマンド学習
-- [ ] **Spring BootアプリのDockerfile作成 (初期)**
+- [x] **DB設計最終確認** (旧Day 1)
+- [x] **EconomicIndicator, VolatilityDataエンティティ実装** (旧Day 2)
+- [x] **User, UserSettingエンティティ実装** (旧Day 2)
+- [x] **エンティティ間のリレーション設定** (旧Day 2)
+- [x] **Docker環境構築準備:** Docker Desktopインストール確認、基本的なDockerコマンド学習
+- [x] **Spring BootアプリのDockerfile作成 (初期)**
 
 ### Day 2: 2025年5月27日（火）- リポジトリ層、サービス層(基本)、Dockerイメージビルド
 - **推奨ブランチ**: `feature/day2-repo-service-docker`
